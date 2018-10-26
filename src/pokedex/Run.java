@@ -40,6 +40,11 @@ public class Run extends Application {
 
         stage.setScene(scene);
         stage.setTitle("Pokedex");
+        try {
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("/Icon/icon.png")));
+        }catch (Exception e1){
+            e1.printStackTrace();
+        }
         stage.show();
     }
 

@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Pokedexnew" />
+      <artifact name="Pokedexnew:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfc7ac88-05e6-4af5-b628-aedcdf70e711" name="Default" comment="Versión acabada con todos los pokemon">
+    <list default="true" id="bfc7ac88-05e6-4af5-b628-aedcdf70e711" name="Default" comment="Versión acabada.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pokedexnew/pokedex/Pokedex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pokedexnew/pokedex/Pokedex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pokedexnew/pokedex/Pokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pokedexnew/pokedex/Pokemon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokedex/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokedex/Pokedex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokedex/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokedex/Run.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,21 +54,21 @@
           <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="8" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="4" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="15" />
-          <entry key="txt" value="215" />
+          <entry key="java" value="234" />
+          <entry key="txt" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15" />
-          <entry key="PLAIN_TEXT" value="215" />
+          <entry key="JAVA" value="234" />
+          <entry key="PLAIN_TEXT" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -94,10 +93,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pokedex/Run.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="189">
+              <caret line="43" column="125" selection-start-line="43" selection-start-column="125" selection-end-line="43" selection-end-column="125" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1748#1749#0" expanded="true" />
+                <element signature="e#1772#1773#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,10 +128,10 @@
         <option value="$PROJECT_DIR$/src/pokedex/imagen.java" />
         <option value="$PROJECT_DIR$/src/pokedex/Application.java" />
         <option value="$PROJECT_DIR$/src/pokedex/PokeTab.java" />
-        <option value="$PROJECT_DIR$/src/pokedex/Run.java" />
         <option value="$PROJECT_DIR$/pokemones.txt" />
         <option value="$PROJECT_DIR$/src/pokedex/Pokedex.java" />
         <option value="$PROJECT_DIR$/src/pokedex/Pokemon.java" />
+        <option value="$PROJECT_DIR$/src/pokedex/Run.java" />
       </list>
     </option>
   </component>
@@ -166,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -175,15 +175,26 @@
               <item name="PseudoPokedex" type="b2602c69:ProjectViewProjectNode" />
               <item name="PseudoPokedex" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PseudoPokedex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PseudoPokedex" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PseudoPokedex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PseudoPokedex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540576473924" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540579021412" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -335,14 +346,29 @@
       <option name="project" value="LOCAL" />
       <updated>1540565049177</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Versión acabada.">
+      <created>1540576556906</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540576556906</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Versión acabada.">
+      <created>1540576571956</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540576571956</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13347921" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.102345414" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -351,12 +377,12 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.11829135" />
-      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27006507" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.329653" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.33187294" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3308026" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Ant Build" order="2" />
@@ -396,7 +422,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Versión acabada con todos los pokemon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versión acabada con todos los pokemon" />
+    <MESSAGE value="Versión acabada." />
+    <option name="LAST_COMMIT_MESSAGE" value="Versión acabada." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -435,10 +462,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokedex/Run.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="189">
+          <caret line="43" column="125" selection-start-line="43" selection-start-column="125" selection-end-line="43" selection-end-column="125" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -449,7 +478,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Pokedexnew</last-edited>
+          <last-edited>Pokedexnew:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
