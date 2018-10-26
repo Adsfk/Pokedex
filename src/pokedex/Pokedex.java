@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
-
 class Pokedex {
     private Map<Integer, Pokemon> pokedex;
     static int max;
