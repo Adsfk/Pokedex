@@ -1,4 +1,4 @@
-Bulbasaur-Planta-Veneno-.\Pokemon\001.png
+﻿Bulbasaur-Planta-Veneno-.\Pokemon\001.png
 Ivysaur-Planta-Veneno-.\Pokemon\002.png
 Venusaur-Planta-Veneno-.\Pokemon\003.png
 Charmander-Fuego- -.\Pokemon\004.png
@@ -34,3 +34,118 @@ Nidorino-Veneno- -.\Pokemon\033.png
 Nidoking-Veneno-Tierra-.\Pokemon\034.png
 Clefairy-Hada- -.\Pokemon\035.png
 Clefable-Hada- -.\Pokemon\036.png
+Vulpix-Fuego- -.\Pokemon\037.png
+Ninetales-Fuego- -.\Pokemon\038.png
+Jigglypuff-Normal-Hada-.\Pokemon\039.png
+Wigglytuff-Normal-Hada-.\Pokemon\040.png
+Zubat-Veneno-Volador-.\Pokemon\041.png
+Golbat-Veneno-Volador-.\Pokemon\042.png
+Oddish-Planta-Veneno-.\Pokemon\043.png
+Gloom-Planta-Veneno-.\Pokemon\044.png
+Vileplume-Planta-Veneno-.\Pokemon\045.png
+Paras-Bicho-Planta-.\Pokemon\046.png
+Parasect-Bicho-Planta-.\Pokemon\047.png
+Venonat-Bicho-Veneno-.\Pokemon\048.png
+Venomoth-Bicho-Veneno-.\Pokemon\049.png
+Diglett-Tierra- -.\Pokemon\050.png
+Dugtrio-Tierra- -.\Pokemon\051.png
+Meowth-Normal- -.\Pokemon\052.png
+Persian-Normal- -.\Pokemon\053.png
+Psyduck-Agua- -.\Pokemon\054.png
+Golduck-Agua- -.\Pokemon\055.png
+Mankey-Lucha- -.\Pokemon\056.png
+Primeape-Lucha- -.\Pokemon\057.png
+Growlithe-Fuego- -.\Pokemon\058.png
+Arcanine-Fuego- -.\Pokemon\059.png
+Poliwag-Agua- -.\Pokemon\060.png
+Poliwhirl-Agua- -.\Pokemon\061.png
+Poliwrath-Agua-Lucha-.\Pokemon\062.png
+Abra-Psíquico- -.\Pokemon\063.png
+Kadabra-Psíquico- -.\Pokemon\064.png
+Alakazam-Psíquico- -.\Pokemon\065.png
+Machop-Lucha- -.\Pokemon\066.png
+Machoke-Lucha- -.\Pokemon\067.png
+Machamp-Lucha- -.\Pokemon\068.png
+Bellsprout-Planta-Veneno-.\Pokemon\069.png
+Weepinbell-Planta-Veneno-.\Pokemon\070.png
+Victreebel-Planta-Veneno-.\Pokemon\071.png
+Tentacool-Agua-Veneno-.\Pokemon\072.png
+Tentacruel-Agua-Veneno-.\Pokemon\073.png
+Geodude-Roca-Tierra-.\Pokemon\074.png
+Graveler-Roca-Tierra-.\Pokemon\075.png
+Golem-Roca-Tierra-.\Pokemon\076.png
+Ponyta-Fuego- -.\Pokemon\077.png
+Rapidash-Fuego- -.\Pokemon\078.png
+Slowpoke-Agua-Psíquico-.\Pokemon\079.png
+Slowbro-Agua-Psíquico-.\Pokemon\080.png
+Magnemite-Eléctrico-Acero-.\Pokemon\081.png
+Magneton-Eléctrico-Acero-.\Pokemon\082.png
+Farfetch'd-Normal-Volador-.\Pokemon\083.png
+Doduo-Normal-Volador-.\Pokemon\084.png
+Dodrio-Normal-Volador-.\Pokemon\085.png
+Seel-Agua- -.\Pokemon\086.png
+Dewgong-Agua-Hielo-.\Pokemon\087.png
+Grimer-Veneno- -.\Pokemon\088.png
+Muk-Veneno- -.\Pokemon\089.png
+Shellder-Agua- -.\Pokemon\090.png
+Cloyster-Agua-Hielo-.\Pokemon\091.png
+Gastly-Fantasma-Veneno-.\Pokemon\092.png
+Haunter-Fantasma-Veneno-.\Pokemon\093.png
+Gengar-Fantasma-Veneno-.\Pokemon\094.png
+Onix-Roca-Tierra-.\Pokemon\095.png
+Drowzee-Psíquico- -.\Pokemon\096.png
+Hypno-Psíquico- -.\Pokemon\097.png
+Krabby-Agua- -.\Pokemon\098.png
+Kingler-Agua- -.\Pokemon\099.png
+Voltorb-Eléctrico- -.\Pokemon\100.png
+Electrode-Eléctrico- -.\Pokemon\101.png
+Exeggcute-Planta-Psíquico-.\Pokemon\102.png
+Exeggutor-Planta-Psíquico-.\Pokemon\103.png
+Cubone-Tierra- -.\Pokemon\104.png
+Marowak-Tierra- -.\Pokemon\105.png
+Hitmonlee-Lucha- -.\Pokemon\106.png
+Hitmonchan-Lucha- -.\Pokemon\107.png
+Lickitung-Normal- -.\Pokemon\108.png
+Koffing-Veneno- -.\Pokemon\109.png
+Weezing-Veneno- -.\Pokemon\110.png
+Rhyhorn-Tierra-Roca-.\Pokemon\111.png
+Rhydon-Tierra-Roca-.\Pokemon\112.png
+Chansey-Normal- -.\Pokemon\113.png
+Tangela-Planta- -.\Pokemon\114.png
+Kangaskhan-Normal- -.\Pokemon\115.png
+Horsea-Agua- -.\Pokemon\116.png
+Seadra-Agua- -.\Pokemon\117.png
+Goldeen-Agua- -.\Pokemon\118.png
+Seaking-Agua- -.\Pokemon\119.png
+Staryu-Agua- -.\Pokemon\120.png
+Seaking-Agua-Psíquico-.\Pokemon\121.png
+Mr. Mime-Psíquico-Hada-.\Pokemon\122.png
+Scyther-Bicho-Volador-.\Pokemon\123.png
+Jynx-Hielo-Psíquico-.\Pokemon\124.png
+Electabuzz-Eléctrico- -.\Pokemon\125.png
+Magmar-Fuego- -.\Pokemon\126.png
+Pinsir-Bicho- -.\Pokemon\127.png
+Tauros-Normal- -.\Pokemon\128.png
+Magikarp-Agua- -.\Pokemon\129.png
+Gyarados-Agua-Volador-.\Pokemon\130.png
+Lapras-Agua-Hielo-.\Pokemon\131.png
+Ditto-Normal- -.\Pokemon\132.png
+Eevee-Normal- -.\Pokemon\133.png
+Vaporeon-Agua- -.\Pokemon\134.png
+Jolteon-Eléctrico- -.\Pokemon\135.png
+Flareon-Fuego- -.\Pokemon\136.png
+Porygon-Normal- -.\Pokemon\137.png
+Omanyte-Roca-Agua-.\Pokemon\138.png
+Omastar-Roca-Agua-.\Pokemon\139.png
+Kabuto-Roca-Agua-.\Pokemon\140.png
+Kabutops-Roca-Agua-.\Pokemon\141.png
+Aerodactyl-Roca-Volador-.\Pokemon\142.png
+Snorlax-Normal- -.\Pokemon\143.png
+Articuno-Hielo-Volador-.\Pokemon\144.png
+Zapdos-Eléctrico-Volador-.\Pokemon\145.png
+Moltres-Fuego-Volador-.\Pokemon\146.png
+Dratini-Dragón- -.\Pokemon\147.png
+Dragonair-Dragón- -.\Pokemon\148.png
+Dragonite-Dragón-Volador-.\Pokemon\149.png
+Mewtwo-Psíquico- -.\Pokemon\150.png
+Mew-Psíquico- -.\Pokemon\151.png
