@@ -4,23 +4,30 @@ public class Pokemon {
     private String name;
     private String type1;
     private String type2;
+    private String dir;
 
-    public Pokemon(String name, String type1, String type2){
+    public Pokemon(String name, String type1, String type2, String dir){
         this.name = name;
         this.type1 = type1;
         this.type2 = type2;
+        this.dir = dir;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public String type1() {
-        return type1;
+    String getDir(){
+        return dir;
     }
 
-    public String type2() {
-        return type2;
+    public String toString(){
+        String str;
+        if (type2.equals(" ")) {
+            str = name + " - " + type1;
+        } else {
+            str = name + " - " + type1 + "/" + type2;
+        }
+        return str;
     }
-
 }
