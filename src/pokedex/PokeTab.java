@@ -21,12 +21,13 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 class PokeTab extends Tab {
 
-    private static int max;
-    private Pokedex pokedex;
-    private int i = 1;
+    private final int max;
+    private final Pokedex pokedex;
+    private int currentPokemon = 1;
     private BorderPane pane;
     private Text text;
     private TextField searchText;
@@ -34,13 +35,13 @@ class PokeTab extends Tab {
     private MediaPlayer mediaPlayer;
     private MediaView mediaView;
 
-    PokeTab(Stage stage) throws Exception {
+    public PokeTab(Stage stage) {
         pokedex = new Pokedex();
-        max = Pokedex.max;
+        max = pokedex.getMax();
         start(stage);
     }
 
-    private void start(Stage stage) throws Exception {
+    private void start(Stage stage) {
         setPane();
         pane.setStyle("-fx-background-color: dimgray;");
 
@@ -51,8 +52,8 @@ class PokeTab extends Tab {
         text.setFont(new Font(20));
         text.setFill(Color.WHITE);
 
-        setIm(pokedex.identify_Pokemon(i).getDir());
-        pane.setCenter(setIm(pokedex.identify_Pokemon(i).getDir()));
+        setImage(pokedex.identifyPokemon(currentPokemon).getDir());
+        pane.setCenter(setImage(pokedex.identifyPokemon(currentPokemon).getDir()));
 
         Scene vScene = new Scene(pane,600,600);
 
@@ -86,6 +87,7 @@ class PokeTab extends Tab {
         mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setAutoPlay(true);
         mediaPlayer.setCycleCount(AudioClip.INDEFINITE);
+        mediaPlayer.setVolume(0.05);
         mediaView = new MediaView(mediaPlayer);
     }
 
@@ -94,48 +96,45 @@ class PokeTab extends Tab {
             switch(e.getCode()){
                 default: break;
                 case  RIGHT:
-                    if ((i == max)) {
-                        i = 1;
+                    if ((currentPokemon == max)) {
+                        currentPokemon = 1;
                     } else {
-                        i++;
+                        currentPokemon++;
                     }
                     break;
                 case LEFT:
-                    if ((i == 1)) {
-                        i = max;
+                    if ((currentPokemon == 1)) {
+                        currentPokemon = max;
                     } else {
-                        i--;
+                        currentPokemon--;
                     }
                     break;
                 case ENTER:
-                    try {
-                        try{
-                            if(Integer.parseInt(searchText.getText())>max){
-                                searchText.setText("No es un número válido");
-                            }else {
-                                i = Integer.parseInt(searchText.getText());
-                            }
-                        }catch (Exception e1){
-                            if(pokedex.write_Name(searchText.getText().toLowerCase())==0){
-                                searchText.setText("No es un nombre válido");
-                            }else {
-                                i = pokedex.write_Name(searchText.getText().toLowerCase());
-                            }
-                        }
-                    } catch (Exception e1) {
-                        e1.printStackTrace();
-                    }
+                    enterKey();
                     break;
                 case ESCAPE:
                     Platform.exit();
                     break;
             }
-            try {
-                pane.setCenter(setIm(pokedex.identify_Pokemon(i).getDir()));
-            } catch (Exception e1) {
-                e1.printStackTrace();
-            }
+            Pokemon p = pokedex.identifyPokemon(currentPokemon);
+            if(p != null) pane.setCenter(setImage(p.getDir()));
         });
+    }
+
+    private void enterKey() {
+        try {
+            if (Integer.parseInt(searchText.getText()) > max) {
+                searchText.setText("No es un número válido");
+            } else {
+                currentPokemon = Integer.parseInt(searchText.getText());
+            }
+        }catch (Exception e){
+            if(pokedex.writeName(searchText.getText().toLowerCase())==0){
+                searchText.setText("No es un nombre válido");
+            }else {
+                currentPokemon = pokedex.writeName(searchText.getText().toLowerCase());
+            }
+        }
     }
 
     private void buttonSetup() {
@@ -143,31 +142,14 @@ class PokeTab extends Tab {
         right = new Button("Siguiente");
         mute = new Button("Mutear");
         exit = new Button("Salir");
+        leftButtonSetup();
+        rightButtonSetup();
+        muteButtonSetup();
 
-        left.setOnAction(e -> {
-            if ((i == 1)) {
-                i = max;
-            } else {
-                i--;
-            }
-            try {
-                pane.setCenter(setIm(pokedex.identify_Pokemon(i).getDir()));
-            } catch (Exception e1) {
-                e1.printStackTrace();
-            }
-        });
-        right.setOnAction(e-> {
-            if ((i == max)) {
-                i = 1;
-            } else {
-                i++;
-            }
-            try {
-                pane.setCenter(setIm(pokedex.identify_Pokemon(i).getDir()));
-            } catch (Exception e1) {
-                e1.printStackTrace();
-            }
-        });
+        exit.setOnAction(e-> Platform.exit());
+    }
+
+    private void muteButtonSetup() {
         mute.setOnAction(e->{
             if(mediaPlayer.isMute()){
                 mediaPlayer.setMute(false);
@@ -177,11 +159,39 @@ class PokeTab extends Tab {
                 mute.setText("Desmutear");
             }
         });
-        exit.setOnAction(e-> Platform.exit());
     }
 
-    private ImageView setIm(String dir) throws Exception{
-        FileInputStream inStream = new FileInputStream(dir);
+    private void rightButtonSetup() {
+        right.setOnAction(e-> {
+            if ((currentPokemon == max)) {
+                currentPokemon = 1;
+            } else {
+                currentPokemon++;
+            }
+            Pokemon p = pokedex.identifyPokemon(currentPokemon);
+            if(p != null) pane.setCenter(setImage(p.getDir()));
+        });
+    }
+
+    private void leftButtonSetup() {
+        left.setOnAction(e -> {
+            if ((currentPokemon == 1)) {
+                currentPokemon = max;
+            } else {
+                currentPokemon--;
+            }
+            Pokemon p = pokedex.identifyPokemon(currentPokemon);
+            if(p != null) pane.setCenter(setImage(p.getDir()));
+        });
+    }
+
+    private ImageView setImage(String dir){
+        FileInputStream inStream = null;
+        try {
+            inStream = new FileInputStream(dir);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         Image image = new Image(inStream);
 
@@ -191,10 +201,8 @@ class PokeTab extends Tab {
         imView.setY(300);
         imView.setPreserveRatio(true);
 
-        Pokemon p = pokedex.identify_Pokemon(i);
-        if(p==null) {
-            throw new Exception();
-        } else text.setText(i+"-> "+p.toString());
+        Pokemon p = pokedex.identifyPokemon(currentPokemon);
+        if(p!=null) text.setText(currentPokemon +"-> "+p.toString());
         pane.setTop(text);
 
         return imView;

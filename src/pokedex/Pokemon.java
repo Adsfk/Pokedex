@@ -1,10 +1,10 @@
 package pokedex;
 
 public class Pokemon {
-    private String name;
-    private String type1;
-    private String type2;
-    private String dir;
+    private final String name;
+    private final String type1;
+    private final String type2;
+    private final String dir;
 
     public Pokemon(String name, String type1, String type2, String dir){
         this.name = name;

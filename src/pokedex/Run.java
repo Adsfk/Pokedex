@@ -15,6 +15,10 @@ import java.io.FileInputStream;
 
 public class Run extends Application {
 
+    public static void main(String[] args) {
+        launch();
+    }
+
     @Override
     public void start(Stage stage) throws Exception {
         VBox root = new VBox();
@@ -22,13 +26,8 @@ public class Run extends Application {
         root.setStyle("-fx-background-color: darkred;");
 
         Button startBut = new Button("Abrir Pokedex");
-        startBut.setOnAction(e-> {
-            try {
-                new PokeTab(stage);
-            } catch (Exception e1) {
-                e1.printStackTrace();
-            }
-        });
+        startButtonSetup(startBut, stage);
+
 
         Text text = new Text("Pokedex Primera Generación");
         text.setFont(new Font(30));
@@ -48,6 +47,16 @@ public class Run extends Application {
         stage.show();
     }
 
+    private void startButtonSetup(Button startBut, Stage stage) {
+        startBut.setOnAction(e-> {
+            try {
+                new PokeTab(stage);
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+        });
+    }
+
     private ImageView setImage() throws Exception{
         FileInputStream inStream = new FileInputStream(".\\Pokemon\\pokedex.jpg");
 
@@ -59,9 +68,5 @@ public class Run extends Application {
         imView.setPreserveRatio(true);
 
         return imView;
-    }
-
-    public static void main(String[] args) {
-        launch();
     }
 }

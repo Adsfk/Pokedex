@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc7ac88-05e6-4af5-b628-aedcdf70e711" name="Default" comment="Versión acabada.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokedex/PokeTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokedex/PokeTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokedex/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokedex/Pokedex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokedex/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokedex/Pokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokedex/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokedex/Run.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,35 +53,38 @@
     <session id="748232797">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
-          <entry key="project.open.time.0" value="8" />
+          <entry key="project.closed" value="29" />
+          <entry key="project.open.time.0" value="12" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="4" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="8" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="234" />
+          <entry key="java" value="253" />
           <entry key="txt" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="234" />
+          <entry key="JAVA" value="806" />
           <entry key="PLAIN_TEXT" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="5" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -90,16 +95,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pokedex/Run.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="43" column="125" selection-start-line="43" selection-start-column="125" selection-end-line="43" selection-end-column="125" />
+            <state relative-caret-position="588">
+              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1748#1749#0" expanded="true" />
-                <element signature="e#1772#1773#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokedex/Pokemon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokedex/Pokedex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+              <folding>
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pokedex/PokeTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="89" column="32" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -127,11 +163,11 @@
         <option value="$PROJECT_DIR$/src/pokedex/pruebaImagen.java" />
         <option value="$PROJECT_DIR$/src/pokedex/imagen.java" />
         <option value="$PROJECT_DIR$/src/pokedex/Application.java" />
-        <option value="$PROJECT_DIR$/src/pokedex/PokeTab.java" />
         <option value="$PROJECT_DIR$/pokemones.txt" />
-        <option value="$PROJECT_DIR$/src/pokedex/Pokedex.java" />
         <option value="$PROJECT_DIR$/src/pokedex/Pokemon.java" />
+        <option value="$PROJECT_DIR$/src/pokedex/Pokedex.java" />
         <option value="$PROJECT_DIR$/src/pokedex/Run.java" />
+        <option value="$PROJECT_DIR$/src/pokedex/PokeTab.java" />
       </list>
     </option>
   </component>
@@ -168,6 +204,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,15 +222,20 @@
               <item name="PseudoPokedex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PseudoPokedex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PseudoPokedex" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pokedex" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540579021412" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540579050212" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -360,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540576571956</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Versión acabada.">
+      <created>1540579038836</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540579038836</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -368,7 +417,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" order="0" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.102345414" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.11727079" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -380,7 +429,7 @@
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27006507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.329653" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3308026" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -432,13 +481,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/pokedex/pruebaImagen.java" />
     <entry file="file://$PROJECT_DIR$/src/pokedex/imagen.java" />
-    <entry file="file://$PROJECT_DIR$/src/pokedex/Pokedex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pokemones.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-777">
@@ -446,29 +488,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokedex/Run.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pokedex/Pokemon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="315">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokedex/Pokedex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokedex/PokeTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2447">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokedex/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="43" column="125" selection-start-line="43" selection-start-column="125" selection-end-line="43" selection-end-column="125" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="89" column="32" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
         </state>
       </provider>
     </entry>

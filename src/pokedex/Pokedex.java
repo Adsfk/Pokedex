@@ -4,35 +4,35 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
-class Pokedex {
+public class Pokedex {
     private Map<Integer, Pokemon> pokedex;
-    static int max;
+    public int max;
 
-    Pokedex() {
+    public Pokedex() {
         pokedex = new HashMap<>();
         loadPokedex();
     }
 
-    int write_Name(String name) {
+    public int getMax() {
+        return this.max;
+    }
+
+    public int writeName(String name) {
         for (Integer number : pokedex.keySet()) {
-            if(pokedex.get(number).getName().toLowerCase().equals(name)){
+            if(pokedex.get(number).getName().equalsIgnoreCase(name)){
                 return number;
             }
         }
         return 0;
     }
 
-    Pokemon identify_Pokemon(int ID) throws Exception {
+    Pokemon identifyPokemon(int ID) {
         Pokemon pokemon = pokedex.get(ID);
-        if(pokemon == null){
-            throw new Exception();
-        }
         return pokemon;
     }
 
     private void loadPokedex(){
-        try{
-            BufferedReader br = new BufferedReader(new FileReader("pokemones.txt"));
+        try(BufferedReader br = new BufferedReader(new FileReader("pokemones.txt"))){
             String st;
             for(max = 1;(st = br.readLine())!=null;max++){
                 String[] pok = st.split("-");
@@ -40,7 +40,6 @@ class Pokedex {
                 pokedex.put(max,p);
             }
             max--;
-            br.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
