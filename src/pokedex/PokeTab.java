@@ -97,18 +97,10 @@ class PokeTab extends Tab {
             switch(e.getCode()){
                 default: break;
                 case  RIGHT:
-                    if ((currentPokemon == max)) {
-                        currentPokemon = 1;
-                    } else {
-                        currentPokemon++;
-                    }
+                    rightPokemon();
                     break;
                 case LEFT:
-                    if ((currentPokemon == 1)) {
-                        currentPokemon = max;
-                    } else {
-                        currentPokemon--;
-                    }
+                    leftPokemon();
                     break;
                 case ENTER:
                     enterKey();
@@ -121,6 +113,24 @@ class PokeTab extends Tab {
             if(p != null) pane.setCenter(setImage(p.getDir()));
         });
     }
+
+    private void leftPokemon() {
+        if ((currentPokemon == 1)) {
+            currentPokemon = max;
+        } else {
+            currentPokemon--;
+        }
+    }
+
+    private void rightPokemon() {
+        if ((currentPokemon == max)) {
+            currentPokemon = 1;
+        } else {
+            currentPokemon++;
+        }
+    }
+
+
 
     private void enterKey() {
         try {
@@ -164,11 +174,7 @@ class PokeTab extends Tab {
 
     private void rightButtonSetup() {
         right.setOnAction(e-> {
-            if ((currentPokemon == max)) {
-                currentPokemon = 1;
-            } else {
-                currentPokemon++;
-            }
+            rightPokemon();
             Pokemon p = pokedex.identifyPokemon(currentPokemon);
             if(p != null) pane.setCenter(setImage(p.getDir()));
         });
@@ -176,11 +182,7 @@ class PokeTab extends Tab {
 
     private void leftButtonSetup() {
         left.setOnAction(e -> {
-            if ((currentPokemon == 1)) {
-                currentPokemon = max;
-            } else {
-                currentPokemon--;
-            }
+            leftPokemon();
             Pokemon p = pokedex.identifyPokemon(currentPokemon);
             if(p != null) pane.setCenter(setImage(p.getDir()));
         });
