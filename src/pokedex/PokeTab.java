@@ -73,6 +73,7 @@ class PokeTab extends Tab {
         searchText = new TextField();
         searchText.setPrefWidth(150);
         searchText.setText("Inserta nombre o número");
+        searchText.setOnAction(e->searchText.setText(""));
         searchText.setOnMouseClicked(e->searchText.setText(""));
 
         buttonSetup();

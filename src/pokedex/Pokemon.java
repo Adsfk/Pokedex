@@ -22,12 +22,6 @@ public class Pokemon {
     }
 
     public String toString(){
-        String str;
-        if (type2.equals(" ")) {
-            str = name + " - " + type1;
-        } else {
-            str = name + " - " + type1 + "/" + type2;
-        }
-        return str;
+        return type2.equals(" ")?(name + " - " + type1):(name + " - " + type1 + "/" + type2);
     }
 }

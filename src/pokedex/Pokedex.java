@@ -18,25 +18,23 @@ public class Pokedex {
     }
 
     public int writeName(String name) {
-        for (Integer number : pokedex.keySet()) {
-            if(pokedex.get(number).getName().equalsIgnoreCase(name)){
+        for (Integer number : pokedex.keySet())
+            if(pokedex.get(number).getName().equalsIgnoreCase(name))
                 return number;
-            }
-        }
         return 0;
     }
 
     Pokemon identifyPokemon(int ID) {
-        Pokemon pokemon = pokedex.get(ID);
-        return pokemon;
+        return pokedex.get(ID);
     }
 
     private void loadPokedex(){
         try(BufferedReader br = new BufferedReader(new FileReader("pokemones.txt"))){
             String st;
+            Pokemon p;
             for(max = 1;(st = br.readLine())!=null;max++){
                 String[] pok = st.split("-");
-                Pokemon p = new Pokemon(pok[0],pok[1],pok[2],pok[3]);
+                p = new Pokemon(pok[0],pok[1],pok[2],pok[3]);
                 pokedex.put(max,p);
             }
             max--;
