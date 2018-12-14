@@ -73,7 +73,6 @@ class PokeTab extends Tab {
         searchText = new TextField();
         searchText.setPrefWidth(150);
         searchText.setText("Inserta nombre o número");
-        searchText.setOnAction(e->searchText.setText(""));
         searchText.setOnMouseClicked(e->searchText.setText(""));
 
         buttonSetup();
@@ -138,12 +137,14 @@ class PokeTab extends Tab {
                 searchText.setText("No es un número válido");
             } else {
                 currentPokemon = Integer.parseInt(searchText.getText());
+                searchText.setText("");
             }
         }catch (Exception e){
             if(pokedex.writeName(searchText.getText().toLowerCase())==0){
                 searchText.setText("No es un nombre válido");
             }else {
-                currentPokemon = pokedex.writeName(searchText.getText().toLowerCase());
+                currentPokemon = pokedex.writeName(searchText.getText());
+                searchText.setText("");
             }
         }
     }
